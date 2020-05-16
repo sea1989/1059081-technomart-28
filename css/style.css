@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -41,7 +43,9 @@ body {
   padding-left: 30px;
 }
 
-.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -83,7 +87,6 @@ a {
 .begin a {
   color: white;
   display: block;
-  vertical-align: middle;
 }
 
 .min-header {
@@ -124,7 +127,10 @@ a {
   justify-content: space-between;
 }
 
-.site-navigation, .user-navigation, .site-navigation-footer, .personal-account-in {
+.site-navigation,
+.user-navigation,
+.site-navigation-footer,
+.personal-account-in {
   list-style: none;
 }
 
@@ -163,7 +169,7 @@ a {
   color: #000000;
 }
 
-.personal-account-in a{
+.personal-account-in a {
   color: #000000;
 }
 
@@ -195,11 +201,15 @@ a {
   color: #000000;
 }
 
-.site-navigation a, .site-navigation-footer a {
+.site-navigation a,
+.site-navigation-footer a {
   color: #ffffff;
 }
 
-.site-navigation a:hover, .site-navigation a:focus, .user-navigation a:hover, .user-navigation a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
   background-color: #242424;
 }
 
@@ -533,13 +543,12 @@ a {
 .avia li::before {
   position: absolute;
   content: "";
-width: 25px;
-height: 2px;
-background-color: #ee3643;
-left: -38px;
-top: 10px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  left: -38px;
+  top: 10px;
 }
-
 
 .contacs {
   width: 300px;
@@ -547,7 +556,8 @@ top: 10px;
   padding-top: 52px;
 }
 
-.info h2, .contacs h2 {
+.info h2,
+.contacs h2 {
   height: 21px;
   font-family: Cuprum;
   font-size: 30px;
@@ -607,7 +617,9 @@ top: 10px;
   margin-left: 0px;
 }
 
-.button:hover, .button:focus, .button:active {
+.button:hover,
+.button:focus,
+.button:active {
   background-color: #663d15;
 }
 
@@ -731,7 +743,10 @@ top: 10px;
   color: #f2f6f8;
 }
 
-.products a, .social a, .footer-contacs-back a, .academy a {
+.products a,
+.social a,
+.footer-contacs-back a,
+.academy a {
   font-family: Cuprum, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -794,7 +809,8 @@ top: 10px;
   color: #000000;
 }
 
-.breadcrumbs a:hover, .breadcrumbs a:focus {
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
   text-decoration: underline;
 }
 
@@ -832,7 +848,6 @@ top: 10px;
   height: 1028px;
   margin-left: auto;
   margin-right: auto;
-  background: ;
 }
 
 .column {
@@ -886,7 +901,8 @@ top: 10px;
   cursor: pointer;
 }
 
-.price-controls .min-price, .price-controls .max-price {
+.price-controls .min-price,
+.price-controls .max-price {
   padding-top: 9px;
   margin-bottom: 25px;
 }
@@ -1036,7 +1052,8 @@ top: 10px;
   z-index: 10;
 }
 
-.catalog-item .actions .buy, .catalog-item .actions .bookmark {
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
   display: block;
   width: 129px;
   margin: 0 auto;
@@ -1124,7 +1141,8 @@ top: 10px;
   text-decoration: line-through;
 }
 
-.catalog-item .price, .catalog-item-index .price {
+.catalog-item .price,
+.catalog-item-index .price {
   display: block;
   position: relative;
   width: 140px;
@@ -1140,7 +1158,8 @@ top: 10px;
   border-radius: 3px;
 }
 
-.catalog-item .price::after, .catalog-item-index .price::after {
+.catalog-item .price::after,
+.catalog-item-index .price::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1193,7 +1212,8 @@ top: 10px;
   z-index: 3;
 }
 
-.modal-close::before, .modal-close::after {
+.modal-close::before,
+.modal-close::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -1353,7 +1373,8 @@ top: 10px;
 
 /* ----- Сеточные стили ----- */
 
-html, body {
+html,
+body {
   min-width: 1200px;
 }
 
@@ -1382,7 +1403,8 @@ body {
   list-style: none;
 }
 
-.colors-button a, .colors-column a {
+.colors-button a,
+.colors-column a {
   color: #ffffff;
 }
 
@@ -1719,7 +1741,8 @@ body {
   align-items: center;
 }
 
-.popular p, .popular-firm p {
+.popular p,
+.popular-firm p {
   font-family: Cuprum;
   font-size: 30px;
   font-weight: normal;
@@ -1732,7 +1755,8 @@ body {
   margin-left: 30px;
 }
 
-.popular a, .popular-firm a {
+.popular a,
+.popular-firm a {
   width: 253px;
   display: flex;
   background-color: #ee3643;
@@ -2002,7 +2026,6 @@ h5 {
   height: 1370px;
   margin-left: auto;
   margin-right: auto;
-  background: ;
 }
 
 .search-header {
@@ -2049,7 +2072,9 @@ h5 {
   font-size: 13px;
 }
 
-.sort-price, .sort-type, .sort-function {
+.sort-price,
+.sort-type,
+.sort-function {
   font-family: PTSans;
   font-size: 13px;
   font-weight: normal;
@@ -2152,7 +2177,9 @@ h5 {
   border-radius: 3px;
 }
 
-.pagination-item a:hover, .pagination-item a:focus, .pagination-item a:active {
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
   background-color: #663d15;
 }
 
@@ -2162,7 +2189,9 @@ h5 {
   background-color: #ee3643;
 }
 
-.pagination-item-current a:hover, .pagination-item-current a:focus, .pagination-item-current a:active {
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
   color: #000000;
   background-color: #ffffff;
 }
@@ -2171,22 +2200,26 @@ h5 {
   display: none;
 }
 
-#product-1:checked~#slide1, #product-2:checked~#slide2, #product-3:checked~#slide3 {
+#product-1:checked ~ #slide1,
+#product-2:checked ~ #slide2,
+#product-3:checked ~ #slide3 {
   display: block;
 }
 
-#slide-1:checked~#slider-1, #slide-2:checked~#slider-2 {
+#slide-1:checked ~ #slider-1,
+#slide-2:checked ~ #slider-2 {
   display: block;
 }
 
-#battery:checked~#radio-power2, #power:checked~#radio-2 {
+#battery:checked ~ #radio-power2,
+#power:checked ~ #radio-2 {
   display: block;
 }
 
-#filter-bosh:checked~#checkbox-2, 
-#filter-interskol:checked~#checkbox-interskol2, 
-#filter-makita:checked~#checkbox-makita2, 
-#filter-dewalt:checked~#checkbox-walt2, 
-#filter-hitachi:checked~#checkbox-hi2 {
+#filter-bosh:checked ~ #checkbox-2,
+#filter-interskol:checked ~ #checkbox-interskol2,
+#filter-makita:checked ~ #checkbox-makita2,
+#filter-dewalt:checked ~ #checkbox-walt2,
+#filter-hitachi:checked ~ #checkbox-hi2 {
   display: block;
 }
