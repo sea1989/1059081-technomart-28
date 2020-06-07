@@ -41,7 +41,7 @@ html {
 .page-main {
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr 1fr min-content;
+  grid-template-rows: min-content 1fr min-content min-content;
   align-content: start;
 }
 
@@ -522,6 +522,7 @@ a {
 }
 
 .bottom-page {
+  margin-top: 44px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -531,7 +532,6 @@ a {
 .info {
   margin: 0px;
   width: 640px;
-  padding-top: 52px;
   padding-bottom: 98px;
   background: var(--basic-white);
 }
@@ -565,10 +565,11 @@ a {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.11;
+  line-height: 0.90;
   letter-spacing: normal;
   text-align: left;
-  margin-bottom: 27px;
+  margin-top: 7px;
+  margin-left: -2px;
   list-style: none;
 }
 
@@ -590,7 +591,6 @@ a {
 .contacs {
   width: 300px;
   background: var(--basic-white);
-  padding-top: 52px;
 }
 
 .info h2,
@@ -1426,7 +1426,7 @@ body {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 85px;
+  margin-bottom: 63px;
 }
 
 .colors-button {
@@ -2168,7 +2168,7 @@ h5 {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 67px;
+  padding-top: 30px;
   padding-bottom: 73px;
 }
 
@@ -2195,7 +2195,7 @@ h5 {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-top: 32px;
+  margin-top: 20px;
   margin-left: 20px;
   list-style: none;
 }
