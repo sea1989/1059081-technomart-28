@@ -14,6 +14,7 @@ html {
   --basic-black: #000000;
   --basic-extra-dark: #242424;
   --basic-dark: #aba9a7;
+  --basic-dark-light: #f4f4f4;
   --basic-neutral: #e5e5e5;
   --basic-grey: #293449;
   --basic-extra-grey: #32425c;
@@ -21,7 +22,6 @@ html {
   --basic-white: #ffffff;
   --basic-red: #ee3643;
   --basic-extra-red: #ba2732;
-
   --special: #663d15;
   --special-shadow: rgba(0, 0, 0, 0.24);
   --special-red: #ca2c37;
@@ -140,14 +140,14 @@ a {
   background-color: var(--basic-extra-grey);
   margin-left: auto;
   margin-right: auto;
+  margin-top: 12px;
+  padding-bottom: 3px;
+  padding-top: 3px;
 }
 
 .site-navigation {
   width: 940px;
-  margin: 0px;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 24px;
   padding-left: 52px;
   padding-right: 55px;
   justify-content: space-between;
@@ -185,15 +185,13 @@ a {
 .personal-account-in {
   position: relative;
   width: 303px;
-  margin-top: 46px;
-  margin-right: 0px;
+  margin-top: 40px;
   margin-bottom: 10px;
   margin-left: 51px;
   background: var(--basic-white);
   padding-top: 14px;
-  padding-right: 69px;
   padding-bottom: 11px;
-  padding-left: 47px;
+  padding-left: 60px;
   font-family: Cuprum;
   font-size: 21px;
   font-weight: normal;
@@ -328,7 +326,7 @@ a {
   position: relative;
   color: #f3f7f9;
   padding-left: 32px;
-  margin-right: 28px;
+  margin-right: 32px;
 }
 
 .bookmarks::before {
@@ -350,7 +348,7 @@ a {
   padding-top: 14px;
   padding-right: 26px;
   padding-bottom: 13px;
-  padding-left: 50px;
+  padding-left: 41px;
 }
 
 .basket-full {
@@ -390,19 +388,19 @@ a {
 }
 
 .store {
-  font-family: inherit;
+  font-family: Cuprum;
+  font-style: italic;
+  font-weight: normal;
   margin: 0px;
   width: 320px;
   font-size: 16px;
-  font-weight: normal;
-  font-style: italic;
   font-stretch: normal;
   line-height: 1.44;
   letter-spacing: normal;
   text-align: left;
   color: var(--basic-red);
-  padding-top: 49px;
-  padding-left: 53px;
+  padding-top: 40px;
+  padding-left: 29px;
   padding-bottom: 40px;
   padding-right: 71px;
 }
@@ -421,23 +419,27 @@ a {
   width: 270px;
   border: solid 3px var(--basic-white);
   font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
   font-size: 21px;
+  line-height: 30px;
   color: var(--basic-red);
-  padding-top: 10px;
-  padding-bottom: 11px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 74px;
 }
 
 .phone-back::before {
   position: absolute;
   content: "";
-  left: 15px;
+  left: 40px;
   width: 19px;
   height: 19px;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+  margin-top: 5px;
 }
 
 .address {
@@ -492,7 +494,7 @@ a {
   display: flex;
   width: 211px;
   margin-top: 0px;
-  margin-left: 68px;
+  margin-left: 100px;
   justify-content: space-between;
   text-decoration: underline;
   font-family: Cuprum;
@@ -504,11 +506,9 @@ a {
   letter-spacing: normal;
   text-align: left;
   color: var(--basic-extra-grey);
+  text-decoration: none;
 }
 
-.my-order a {
-  color: var(--basic-black);
-}
 
 .my-order::after {
   position: absolute;
@@ -532,7 +532,7 @@ a {
 .info {
   margin: 0px;
   width: 640px;
-  padding-bottom: 98px;
+  padding-bottom: 76px;
   background: var(--basic-white);
 }
 
@@ -633,6 +633,21 @@ a {
   margin-bottom: 40px;
   border-radius: 3px;
 }
+
+.button-credit {
+  background-color: var(--basic-red);
+  font-family: Cuprum;
+  font-size: 12px;
+  color: var(--basic-white);
+  padding-top: 14px;
+  padding-right: 44px;
+  padding-bottom: 12px;
+  padding-left: 44px;
+  margin-bottom: 40px;
+  border-radius: 3px;
+}
+
+
 
 .button-contacs {
   background-color: var(--basic-red);
@@ -856,13 +871,11 @@ a {
 }
 
 .filter-model legend {
-  font-family: Cuprum;
-  font-size: 17px;
-  font-weight: bold;
+  font-family: PT Sans;
   font-style: normal;
-  font-stretch: normal;
-  line-height: 1.76;
-  letter-spacing: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
   text-align: left;
   color: var(--basic-black);
 }
@@ -877,14 +890,21 @@ a {
   letter-spacing: normal;
   text-align: left;
   color: var(--basic-black);
+  margin-top: 0px;
 }
 
 .search {
   display: flex;
   width: 940px;
-  height: 1028px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.search-wrapper {
+  width: 940px;
+  margin: auto;
+  padding: auto;
 }
 
 .column {
@@ -899,14 +919,13 @@ a {
   flex-direction: column;
   width: 220px;
   margin-right: 21px;
-  /* для демо */
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 32px;
 }
 
 .filter-range-title {
-  margin-bottom: 21px;
-  font-family: PTSans;
+  margin-bottom: 10px;
+  font-family: PT Sans;
   font-size: 17px;
   font-weight: bold;
   font-stretch: normal;
@@ -948,14 +967,14 @@ a {
   width: 95px;
   color: var(--basic-black);
   font: inherit;
-  font-family: PTSans;
+  font-family: PT Sans;
   font-size: 17px;
   border-radius: 5px;
   text-align: center;
   background-color: #f7f3ec;
   border: none;
-  padding-top: 12px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 25px;
 }
 
@@ -966,6 +985,7 @@ a {
   height: 80px;
   vertical-align: center;
   padding-top: 39px;
+  border-radius: 5px;
 }
 
 .range-controls .scale {
@@ -1007,7 +1027,6 @@ a {
 .price-controls {
   height: 36px;
   margin-bottom: 20px;
-  border: 2px solid var(--basic-white);
   border-radius: 2px;
 }
 
@@ -1016,6 +1035,8 @@ a {
   display: flex;
   width: 220px;
   margin-left: 0;
+  margin-bottom: 22px;
+  padding-left: 0px;
   background: var(--basic-white);
 }
 
@@ -1041,6 +1062,16 @@ a {
   height: 199px;
   border: none;
   background: var(--basic-white);
+  padding: 0px;
+}
+
+.energy legend {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  padding-bottom: 7px;
 }
 
 .catalog {
@@ -1074,7 +1105,7 @@ a {
   z-index: 20;
 }
 
-.catalog-item .flag-new {
+.catalog-item-index .flag-new {
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
@@ -1146,7 +1177,7 @@ a {
 
 .catalog-list-model li {
   margin-left: 35px;
-  margin-top: 16px;
+  margin-top: 18px;
 }
 
 .catalog-item-image img {
@@ -1215,10 +1246,11 @@ a {
 */
 
 .modal {
+  top: 50%;
+  left: 50%;
   position: fixed;
   display: none;
-  color: var(--basic-black);
-  background-color: #f8f3f0;
+  background-color: var(--basic-white);
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -1231,11 +1263,17 @@ a {
 }
 
 .modal-login {
-  top: 120px;
+  top: 50%;
   left: 50%;
   width: 620px;
-  margin-left: -230px;
-  padding: 50px 80px;
+  transform: translate(-50%, -50%);
+  padding-top: 22px;
+}
+
+.inputs-container {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 37px;
 }
 
 .modal-close {
@@ -1247,26 +1285,11 @@ a {
   border: 0;
   cursor: pointer;
   z-index: 3;
+  background: transparent;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
-.modal-close::before,
-.modal-close::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 2px;
-  width: 19px;
-  height: 3px;
-  background-color: #d0d0d0;
-}
-
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
-}
 
 .modal-form-back {
   display: flex;
@@ -1277,6 +1300,7 @@ a {
   display: flex;
   width: 460px;
   justify-content: space-between;
+  font-family: PT Sans;
 }
 
 .modal-form-back label {
@@ -1292,13 +1316,15 @@ a {
 }
 
 .modal-form-back input[type="text"] {
-  width: 100%;
+  width: 220px;
   padding: 10px 15px;
   padding-right: 40px;
+  margin-top: 11px;
   font: inherit;
   color: #a9a9a9;
   font-size: 13px;
   border: solid 2px #dee3e4;
+
 }
 
 .button-form-back {
@@ -1311,13 +1337,37 @@ a {
   letter-spacing: normal;
   text-align: center;
   color: #f3f7f9;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: var(--basic-red);
+  width: 460px;
+  line-height: 18px;
 }
 
 .text-form-back {
   height: 114px;
+  width: 100%;
+  font-family: PT Sans;
+  font-style: Regular;
+  font-size: 13px;
+  margin-top: 11px;
+  padding-left: 12px;
+  padding-top: 6px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+}
+
+.text-form-back::placeholder {
+  line-height: 24px;
+}
+
+.button__background {
+  background-color: var(--basic-dark-light);
+  text-align: center;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .modal-map {
@@ -1365,12 +1415,12 @@ a {
   padding-top: 68px;
   padding-right: 125px;
   padding-bottom: 68px;
-  padding-left: 179px;
-  font-size: 30px;
-  font-weight: normal;
-  font-stretch: normal;
+  padding-left: 120px;
+  font-family: Cuprum;
   font-style: normal;
-  line-height: 1;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
   letter-spacing: normal;
   text-align: center;
 }
@@ -1388,24 +1438,25 @@ a {
 
 .add-basket {
   display: flex;
-  justify-content: space-between;
   padding-left: 80px;
   padding-right: 80px;
   background: #f1f1f1;
+  justify-content: center;
 }
 
 .button-basket {
-  width: 220px;
+  width: 192px;
   margin-top: 37px;
   margin-bottom: 37px;
 }
 
 .continue {
-  width: 220px;
+  width: 192px;
   margin-top: 37px;
   margin-bottom: 37px;
   color: var(--basic-black);
   background: var(--basic-white);
+  margin-left: 10px;
 }
 
 /* ----- Сеточные стили ----- */
@@ -1768,7 +1819,7 @@ body {
 
 .popular {
   display: flex;
-  margin-top: 53px;
+  margin-top: 57px;
   justify-content: space-between;
   background-color: #f9f5f0;
   align-items: center;
@@ -1790,7 +1841,7 @@ body {
 
 .popular a,
 .popular-firm a {
-  width: 253px;
+  width: 192px;
   display: flex;
   background-color: var(--basic-red);
   font-family: Cuprum;
@@ -1798,7 +1849,7 @@ body {
   color: var(--basic-white);
   padding-top: 14px;
   padding-bottom: 12px;
-  margin-right: 23px;
+  margin-right: 13px;
   justify-content: center;
 }
 
@@ -2008,7 +2059,7 @@ h5 {
   padding-left: 80px;
   margin-top: 70px;
   font-family: Cuprum;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -2023,7 +2074,7 @@ h5 {
   margin: 0px;
   padding: 0px;
   padding-left: 80px;
-  padding-top: 20px;
+  padding-top: 30px;
   font-family: PT Sans;
   font-size: 13px;
   font-weight: normal;
@@ -2033,6 +2084,11 @@ h5 {
   letter-spacing: normal;
   text-align: left;
   color: var(--basic-black);
+}
+
+.auto .button-slide {
+  padding-top: 35px;
+  padding-left: 80px;
 }
 
 .delivery-auto {
@@ -2046,18 +2102,17 @@ h5 {
 }
 
 .credit-auto {
-  margin-top: -100px;
+  margin-top: -160px;
   margin-left: 245px;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   width: 940px;
-  height: 1370px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .search-header {
   width: 940px;
@@ -2106,7 +2161,7 @@ h5 {
 .sort-price,
 .sort-type,
 .sort-function {
-  font-family: PTSans;
+  font-family: PT Sans;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -2115,7 +2170,7 @@ h5 {
   letter-spacing: normal;
   text-align: left;
   color: var(--basic-red);
-  margin-left: 139px;
+  margin-left: 141px;
 }
 
 .sort-type {
@@ -2154,9 +2209,8 @@ h5 {
 }
 
 .perforator {
-  margin-left: auto;
-  margin-right: auto;
   background: var(--basic-extra-white);
+  margin-top: 62px;
 }
 
 .perforator-text {
@@ -2164,17 +2218,19 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-  padding-bottom: 73px;
+  padding-bottom: 67px;
 }
 
 .perforator h3 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
   font-size: 30px;
-  font-family: cuprum;
-  line-height: 1;
+  line-height: 30px;
 }
 
 .perforator article {
-  font-family: PTSans;
+  font-family: PT Sans;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
